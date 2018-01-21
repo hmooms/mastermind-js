@@ -1,0 +1,212 @@
+body {
+	background-color: black;
+	position: relative;
+	background-image: url(brain.png);
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+}
+main {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	display: flex;
+}
+aside {
+
+}
+.row {
+	display: inline;	
+}
+.colour div {
+	border: white 3px solid;
+	width: 35px;
+	height: 75px;
+	background-color: black;
+	border-radius: 15px;
+	margin: 20px;
+}
+.correct div {
+	border: red 3px solid;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	border-radius: 8px;	
+	margin: 1px;
+}
+.correct {
+	display: flex;
+	flex-wrap: wrap;
+	width: 35px;
+	height: 35px;
+	margin-left: 25px; 
+}
+.almost div {
+	border: white 3px solid;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	border-radius: 8px;	
+	margin: 1px;
+}
+.almost {
+	display: flex;
+	flex-wrap: wrap;
+	width: 35px;
+	height: 35px;
+	margin-left: 25px; 
+}
+#answer {
+	margin-left: 50px;
+	position: absolute;
+	top: 35px;
+}
+#answer div {
+	width: 75px;
+	border-radius: 75px;
+
+}
+#cover {
+	left: 0;
+	height: 378px;
+	width: 75px;
+	border-radius: 75px;
+	background-color: rgb(50, 255, 254);
+	position: absolute;
+}
+
+ul {
+	position: absolute;
+	top: -65px;
+	left: -15px;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	list-style-type: none;
+	display: none;
+}
+button {
+	height: 100px;
+	width: 100px;
+	background-color: black;
+	border: white 3px solid;
+	border-radius: 100px;
+	margin: 25px;
+	color: white;
+}
+li {
+	height: 20px;
+	width: 35px;
+	border: white 2px solid;
+}
+.red {
+	background-color: red;
+}
+.yellow {
+	background-color: yellow;
+}
+.green {
+	background-color: green;
+	}
+.blue {
+	background-color: blue;
+}
+.pink {
+	background-color: pink;
+}
+.grey {
+	background-color: grey;
+	border-bottom: white 2px solid;
+}
+.button {
+	display: inline;
+	height: 100px;
+	width: 100px;
+	position: relative;
+}
+#answers {
+	position: absolute;
+	top: 680px;
+	left: 300px;
+}
+#enter {
+	height: 75px;
+	width: 125px;
+}
+#I h1 {
+	margin-bottom: 72px;
+	color: white;
+}
+#I {
+	position: absolute;
+	top: 65px;
+	left: -30px;	
+}
+.row h1 {
+	color: white;
+	position: relative;
+	right: -30px;
+}
+button:focus {
+	outline: 0;
+}
+button:hover {
+	cursor: pointer;
+}
+#Instructie {
+	border: white 3px solid;
+	position: absolute;
+	color: white;
+	top: 680px;
+	left: 1050px;
+	height: 265px;
+	width: 350px;
+	padding: 10px;
+}
+
+@keyframes complete{
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100px;
+	}
+}
+
+article {
+	width: 500px;
+	height: 70px;
+	font-size: 35px;
+	background-color: rgb(50, 255, 254);
+	position: fixed;
+	border: 3px solid white;
+	color: black;
+	text-align: center;
+	left: 50%;
+	margin-left: -250px;
+	top: -77px;
+}
+
+h1{
+	margin: 0;
+}
+
+@keyframes end{
+	0% {
+		top: -77px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+#BFB {
+	position: absolute;
+	top: 680px;
+	left: 100px;
+	height: 240px;
+	width: 800px;
+	font-size: 100px;
+	display: none;
+}
