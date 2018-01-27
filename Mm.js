@@ -129,10 +129,11 @@ function check(){
 	}
 	for(var i = 0; i < 4;){
 		for(var a = 0; a < godcode.length;){
-			if (guesscode[i] == godcode[a]){
+			if (guesscode[i] === godcode[a]){
 				a = 4;
 				c[f].style.backgroundColor = "white";
 				delete godcode[a];
+				guesscode.splice (i, 1, "used");
 				console.log(godcode);
 				f++;
 			}
@@ -161,4 +162,3 @@ function check(){
 	}
 	console.log(turn);
 }
-
